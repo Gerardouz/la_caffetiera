@@ -7,8 +7,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <meta name="description" content="">
     <meta name="author" content="">
-
-    <title>Inicio | La Caffettiera</title>
+    
+    <title>{%block titulo%}Inicio | La Caffettiera{%endblock%}</title>
+    
 
     {% load static %}
 
@@ -47,16 +48,16 @@
             <li class="nav-item px-lg-4 {%if request.path == '/about/'%} active {%endif%}">
               <a class="nav-link text-uppercase text-expanded" href="{% url 'core:about' %}">Historia</a>
             </li>
-            <li class="nav-item px-lg-4 {%if request.path == '/servicios/'%} active {%endif%}">
+            <li class="nav-item px-lg-4 {%if request.path == '/services/'%} active {%endif%}">
               <a class="nav-link text-uppercase text-expanded" href="{% url 'servicios' %}">Servicios</a>
             </li>
             <li class="nav-item px-lg-4 {%if request.path == '/store/'%} active {%endif%}">
               <a class="nav-link text-uppercase text-expanded" href="{% url 'core:store' %}">Visítanos</a>
             </li>
-            <li class="nav-item px-lg-4 {%if request.path == '/contacto/' %} active {%endif%}">
+            <li class="nav-item px-lg-4 {%if request.path == '/contact/' %} active {%endif%}">
               <a class="nav-link text-uppercase text-expanded" href="{% url 'contact' %}">Contacto</a>
             </li>
-            <li class="nav-item px-lg-4 {% if request.path|slice:":7" == '/blogs/' %}active{% endif %}">
+            <li class="nav-item px-lg-4 {% if request.path|slice:":6" == '/page/' or request.path|slice:":7" == '/blogs/' %}active{% endif %}">
               <a class="nav-link text-uppercase text-expanded" href="{% url 'blogs' %}">Blog</a>
             </li>
           </ul>

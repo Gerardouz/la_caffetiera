@@ -1,6 +1,8 @@
 {%extends 'base.html' %}
 {%load static%}
-
+{%block titulo%}
+Categoría | La Caffettiera
+{%endblock%}
     {%block content%}
       {%for post in categoria.get_posts.all%}
         <section class="page-section cta">
