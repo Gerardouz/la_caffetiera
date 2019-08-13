@@ -142,8 +142,8 @@ MEDIA_URL = '/media/'
 MEDIA_ROOT = os.path.join(BASE_DIR, 'media')
 
 #email config
+
 """
-EMAIL_USE_TLS = True
 EMAIL_HOST = 'smtp.mailtrap.io'
 EMAIL_HOST_USER = 'a166e7c252335d'
 EMAIL_HOST_PASSWORD = '34c64ef6c825c7'

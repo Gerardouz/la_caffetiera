@@ -46,13 +46,13 @@
               <a class="nav-link text-uppercase text-expanded" href="{%url 'index' %}">Inicio</a>
             </li>
             <li class="nav-item px-lg-4 {%if request.path == '/about/'%} active {%endif%}">
-              <a class="nav-link text-uppercase text-expanded" href="{% url 'core:about' %}">Historia</a>
+              <a class="nav-link text-uppercase text-expanded" href="{% url 'about' %}">Historia</a>
             </li>
             <li class="nav-item px-lg-4 {%if request.path == '/services/'%} active {%endif%}">
               <a class="nav-link text-uppercase text-expanded" href="{% url 'servicios' %}">Servicios</a>
             </li>
             <li class="nav-item px-lg-4 {%if request.path == '/store/'%} active {%endif%}">
-              <a class="nav-link text-uppercase text-expanded" href="{% url 'core:store' %}">Visítanos</a>
+              <a class="nav-link text-uppercase text-expanded" href="{% url 'store' %}">Visítanos</a>
             </li>
             <li class="nav-item px-lg-4 {%if request.path == '/contact/' %} active {%endif%}">
               <a class="nav-link text-uppercase text-expanded" href="{% url 'contact' %}">Contacto</a>

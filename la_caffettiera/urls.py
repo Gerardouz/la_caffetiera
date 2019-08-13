@@ -23,7 +23,7 @@ urlpatterns = [
     path('admin/',admin.site.urls),
     path('',Index, name = 'index'),
     #aplicación core
-    path('',include(('apps.core.urls','core'))),
+    path('',include('apps.core.urls')),
     path('services/',include('apps.services.urls')),
     path('blogs/',include('apps.blog.urls')),
     path('page/',include('apps.pages.urls')),
